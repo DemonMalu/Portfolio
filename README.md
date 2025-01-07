@@ -7,7 +7,7 @@ matteoturco04@gmail.com
 ## Progetti
 1. **[Gerarchia Divinità](https://github.com/DemonMalu/Portfolio/tree/main/SpringJDBCDivinita):**
    Un'applicazione backend che utilizza Spring Boot per creare una tua personalizzata gerarchia divina con CRUD e database MySQL, linguaggio Java.
-2. **[BisCookies]():**
+2. **[BisCookies](https://github.com/DemonMalu/Portfolio/tree/main/King%26Polly):**
    Un sito web che sfrutta il local storage ed il session storage per effettuare una login&register in un sito di biscotti, vecchio progetto dell'ITS che mise alla prova il nostro ingegno nel trovare un metodo alternativo al database per creare un sistema di login&register.   
 
 ## Competenze
