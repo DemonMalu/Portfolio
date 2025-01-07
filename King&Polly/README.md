@@ -4,7 +4,7 @@ Questo progetto è sito web realizzato un po' di tempo fa con il mio collega Chr
 al database per poter realizzare una login & register su un sito web, noi abbiamo sfruttato il local storage ed il session storage, in maniera da simulare un database temporaneo.
 
 ## Operato
-Io personalmente, mi sono occupato quasi interamente della parte estetica del sito (css), con ovviamente l'aiuto del mio collega, insieme abbiamo lavorato alla parte funzionale (JavaScript), ovvero login, il carrello e il feedback. Il mio collega ha contribuito maggiormente sulla parte strutturale del sito (Html).
+Io personalmente, mi sono occupato quasi interamente della parte estetica del sito (css), con ovviamente l'aiuto del mio collega, insieme abbiamo lavorato alla parte funzionale (JavaScript), ovvero login, il carrello e il feedback. Il mio collega ha contribuito maggiormente sulla parte strutturale del sito (Html). Nella parte del feedback, abbiamo inserito l'immagine di un nostro collega completamente consenziente alla cosa.
 
 ## Funzionalità
 - Registrare un nuovo account
