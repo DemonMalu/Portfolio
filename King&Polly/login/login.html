@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>King | Login | Polly</title>
+        <link rel="stylesheet" href="../css/login.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form onsubmit="verifica()">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" name="Username" id="username">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" name="Password" id="password">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Ricordami</label>
+                    <a href="#">Password dimenticata?</a>
+                </div>
+                <input type="submit" class="btn" value="Accedi">
+                <div class="register-link">
+                    <p>Non hai un account? <a href="register.html">Registrati</a></p>
+                </div>
+            </form>
+            <script src="../js/button.js"></script>
+        </div>
+    </body>
+</html>

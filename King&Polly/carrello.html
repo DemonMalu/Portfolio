@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>King | Carrello | Polly</title>
+        <link rel="stylesheet" href="css/sito.css">
+        <link rel="stylesheet" href="css/carrello.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="js/button.js"></script>
+        <script src="js/cart.js"></script>
+    </head>
+    <body onload="checklogin()">
+        <div class="header">
+            <img src="img/King&Polly.png" width="10%">
+            <h1>CARRELLO</h1>
+            <i class='bx bxs-user-circle'></i>
+            <button onclick="logout()" class="btn">Logout</button>
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="carrello.html">Carrello</a>
+                <a href="feedback.html">Feedback e contatti</a>
+            </div>
+        </div>
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <span>Pistacchiosi - Prezzo: €6</span>
+                <button class="btn" onclick="addToCart('Pistacchiosi', 6)">Aggiungi al carrello</button>
+            </div>
+            <div class="product">
+                <span>Fiocchi di Ghiaccio - Prezzo: €3,5</span>
+                <button class="btn" onclick="addToCart('Fiocchi di Ghiaccio', 3.5)">Aggiungi al carrello</button>
+            </div>
+            <div class="product">
+                <span>Batscotti - Prezzo: €7</span>
+                <button class="btn" onclick="addToCart('Batscotti', 7)">Aggiungi al carrello</button>
+            </div>
+            <div class="product">
+                <span>Lunette- Prezzo: €4</span>
+                <button class="btn" onclick="addToCart('Lunette', 4)">Aggiungi al carrello</button>
+            </div>
+            <div class="total" id="total">Totale: €0</div>
+            <div id="cart"><input type="submit" class="btn" value="Compra" onclick="acquista()"></input></div>
+        </div>
+        <div id="fotoContainer"></div>
+    </div>
+    <footer>
+        <h3>&copy; 2024 Biscookies</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>King | Register | Polly</title>
+        <link rel="stylesheet" href="../css/login.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form onsubmit="collect()">
+                <h1>Registrazione</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Nome" name="Nome" id="nome" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Cognome" name="Cognome" id="cognome" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="date" name="Data" id="datanascita" required>
+                    <i class='bx bxs-calendar'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" name="Username" id="username" required>
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" name="Password" id="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <input type="submit" class="btn" value="Registrati"></input>
+                <div class="register-link">
+                    <p>Hai già un account? <a href="login.html">Accedi</a></p>
+                </div>
+            </form>
+            <input type="submit" class="btn" value="Elimina Account" onclick="elimina()"></input>
+            <script src="../js/button.js"></script>
+        </div>
+    </body>
+</html>

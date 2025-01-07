@@ -1,0 +1,131 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: bisque;
+    overflow-x: hidden;
+    margin-bottom: 800px;
+}
+.header{
+    background-image: url(../img/darkgreen.jpg);
+    background-size: cover;
+    background-position: center;
+    color: bisque;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.header .btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(99, 26, 26);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: bisque;
+    font-weight: 600;
+    float: right;
+    transform: translateY(-20px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header i{
+    width: 50px;
+    color: bisque;
+    float: right;
+    transform: translateY(-15px);
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.container .wrapper{
+    font-size: 30px;
+    text-align: left;
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: -150px;
+}
+.nav{
+    background: transparent;
+    color:bisque;
+    /* transform: translateX(100px); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    color:bisque; 
+    padding:19px 28px;
+    display:inline-block; 
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav a:hover
+{
+    background-color:rgb(99, 26, 26);
+    border-radius: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.product {
+    width: 45%;
+    margin: 10px;
+    position: relative;
+}
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+.product .info {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    top: 10px;
+    left: 10px;
+    font-weight: 600;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.description {
+    font-size: 14px;
+}
+.product input{
+    width: 10%;
+}
+.product .btn{
+    width: 130px;
+    border-radius: 20px;
+}
+
+footer{
+    background-image: url("../img/darkgreen.jpg");
+    color: bisque;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: center;
+}

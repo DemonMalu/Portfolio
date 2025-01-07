@@ -1,0 +1,70 @@
+.contatti{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+#feedbackcontatti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#feedbackForm{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+#feedbackForm h1{
+    color: darkgreen;
+}
+#messaggioConferma{
+    font-size: 30px;
+    text-align: left;
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: -150px;
+}
+#feedbackForm .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+#feedbackForm .input-box input{
+    height: 0px;
+    background: rgb(99, 26, 26);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: bisque;
+    padding: 20px 45px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#feedbackForm .input-box textarea{
+    height: 30px;
+    background: rgb(99, 26, 26);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    font-size: 16px;
+    color: bisque;
+    padding: 20px 45px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

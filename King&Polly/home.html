@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>King | Welcome | Polly</title>
+        <link rel="stylesheet" href="css/sito.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="js/button.js"></script>
+    </head>
+    <body onload="checklogin()">
+        <div class="header">
+            <img src="img/King&Polly.png" width="10%">
+            <h1>SHOP BISCOOKIE</h1>
+            <i class='bx bxs-user-circle'></i>
+            <button onclick="logout()" class="btn">Logout</button>
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="carrello.html">Carrello</a>
+                <a href="feedback.html">Feedback e contatti</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapper" style="display: none;">
+                <h1>Ciao</h1>
+            </div>
+            <div class="product" name="product">
+                <img src="img/pistacchio.png" alt="Prodotto 1">
+                <div class="info">
+                    <div class="title">I Pistacchiosi</div>
+                    <div class="description">
+                        I Pistacchiosi sono la scelta migliore per i porci golosi di dolcezza.
+                        <br> €6
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product" name="product">
+                <img src="img/neve.png" alt="Prodotto 2">
+                <div class="info">
+                    <div class="title">I Fiocchi di Ghiaccio</div>
+                    <div class="description">
+                        Per gli amanti del freddo e del gelo abbiamo questi speciali
+                        <br>
+                        biscotti da frigorifero, ideali con il latte freddo.
+                        <br> €3,50
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product" name="product">
+                <img src="img/batscotti.png" alt="Prodotto 3">
+                <div class="info">
+                    <div class="title">Batscotti</div>
+                    <div class="description">
+                        Per i fan più accaniti abbiamo questi speciali biscotti che mangia
+                        <br>
+                        Batman in persona la mattina dopo le sue notti molto attive.
+                        <br> €7
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product" name="product" >
+                <img src="img/lunette.png" alt="Prodotto 4">
+                <div class="info">
+                    <div class="title">Lunette</div>
+                    <div class="description">
+                        Biscotti che si mangiano durante lo spuntino 
+                        <br>
+                        di mezzanotte.
+                        <br> €4
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

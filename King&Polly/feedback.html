@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>King | Feedback e Contatti | Polly</title>
+        <link rel="stylesheet" href="css/sito.css">
+        <link rel="stylesheet" href="css/feedback.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="js/button.js"></script>
+        <script src="js/feed.js"></script>
+    </head>
+    <body onload="checklogin()">
+        <div class="header">
+            <img src="img/King&Polly.png" width="10%">
+            <h1>FEEDBACK E CONTATTI</h1>
+            <i class='bx bxs-user-circle'></i>
+            <button onclick="logout()" class="btn">Logout</button>
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="carrello.html">Carrello</a>
+                <a href="feedback.html">Feedback e contatti</a>
+            </div>
+        </div>
+        <div id="feedbackcontatti">
+        <form id="feedbackForm">
+            <h1>Feedback</h1>
+            <div class="input-box">
+                <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" ><br>
+        <span id="nomeError" class="error"></span><br>
+            </div>
+        
+            <div class="input-box">
+                <label for="email">Email:</label><br>
+        <input type="email" id="email" ><br>
+        <span id="emailError" class="error"></span><br>
+            </div>
+        
+            <div class="input-box">
+                <label for="messaggio">Messaggio:</label><br>
+        <textarea id="messaggio" rows="4" required></textarea> <br>
+        <span id="messaggioError" class="error"></span><br>
+            </div> <br>
+        
+        <label for="radio">Quanto ti sono piaciuti i biscotti? </label><br>
+        <input type="radio" id="1" name="fav_language" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" id="2" name="fav_language" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" id="3" name="fav_language" value="3">
+            <label for="3">3</label><br>
+            <input type="radio" id="4" name="fav_language" value="4">
+            <label for="4">4</label><br>
+            <input type="radio" id="5" name="fav_language" value="5">
+            <label for="5">5</label><br><br>
+        <input type="submit" value="Invia">
+    </form>
+    <div id="messaggioConferma" style="display: none;">
+        Grazie per il tuo feedback! <br>Ti contatteremo presto.
+
+        <div class="contatti">
+            <p>Per informazioni aggiuntive o ulteriori miglioramenti contattarci tramite:<br>
+            Numero di telefono: 0881 85674612<br>
+            Indirizzo: Via Mario Natsola 18, 71122 Foggia FG<br>
+            E-Mail: kingpolly@kingpolly.it<br><br>
+            Seguiteci anche sui social:<br>
+            Instagram: @kingpolly.cookies<br>
+            Twitter: @kingpollyofficial<br>
+            Facebook: @kingpollyofficial<br></p>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <h3>&copy; 2024 Biscookies</h3>
+    </footer>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nome = document.getElementById('nome').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var messaggio = document.getElementById('messaggio').value.trim();
+
+            var nomeError = document.getElementById('nomeError');
+            var emailError = document.getElementById('emailError');
+            var messaggioError = document.getElementById('messaggioError');
+
+            if (nome === '') {
+                nomeError.textContent = 'Inserisci il tuo nome';
+            } else {
+                nomeError.textContent = '';
+            }
+
+            if (email === '') {
+                emailError.textContent = 'Inserisci il tuo indirizzo email';
+            } else if (!isValidEmail(email)) {
+                emailError.textContent = 'Inserisci un indirizzo email valido';
+            } else {
+                emailError.textContent = '';
+            }
+
+            if (messaggio === '') {
+                messaggioError.textContent = 'Inserisci un messaggio';
+            } else {
+                messaggioError.textContent = '';
+            }
+
+            if (nome !== '' && isValidEmail(email) && messaggio !== '') {
+                document.getElementById('feedbackForm').style.display = 'none';
+                document.getElementById('messaggioConferma').style.display = 'block';
+            }
+        });
+        
+        function isValidEmail(email) {
+            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return pattern.test(email);
+        }
+    </script>
+</body>
+</html>

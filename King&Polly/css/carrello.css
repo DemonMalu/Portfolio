@@ -1,0 +1,48 @@
+body{
+    margin-bottom: 400px;
+}
+
+#fotoContainer {
+    margin-left: 50px;
+}
+
+.products{
+    background: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+    transform: translateY(-100px);
+}
+.products .product .btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(99, 26, 26);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: bisque;
+    font-weight: 600;
+    float: right;
+    transform: translateX(185px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.products #cart .btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(99, 26, 26);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: bisque;
+    font-weight: 600;
+    float: right;
+    transform: translateY(10px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
